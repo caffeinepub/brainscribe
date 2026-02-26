@@ -1,0 +1,247 @@
+{
+  "kind": "build_request",
+  "title": "Brainscribe Corporate Website – 4-Page Static HTML5/CSS/JS",
+  "projectName": "Brainscribe Website",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a shared HTML header component (included on all 4 pages) with a placeholder box displaying the text 'Brainscribe' in place of a logo, a navigation menu linking to Home, About Us, Services, and Contact Us pages, and a blue & white corporate color scheme. The header must be responsive.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3",
+          "msg-5"
+        ],
+        "quotes": [
+          "Just a placeholder box",
+          "The header band should have a placeholder to the company logo",
+          "Please keep the theme should be blue and white"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Header appears consistently on all 4 pages",
+        "Logo area is a styled placeholder box with the text 'Brainscribe'",
+        "Navigation links correctly route to all four pages",
+        "Header is responsive on mobile and desktop"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Create a shared HTML footer component (included on all 4 pages) with company name 'Brainscribe', headquarter location (Pune, India), copyright year, and quick navigation links.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3",
+          "msg-5"
+        ],
+        "quotes": [
+          "Pune is the headquarter"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer appears on all 4 pages",
+        "Pune, India address is displayed",
+        "Copyright text and quick links are present"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create the Home Page (index.html) with the following sections: (1) Hero section with the Brainscribe tagline 'Engineering Intelligence. Empowering Growth.' and a brief mission statement; (2) Services overview section with icon cards for each service (Custom .NET/SharePoint/SQL development, Moodle LMS, Staffing, XDT, Azure/AWS Hosting, Instructional & Graphics Design); (3) Stats bar displaying '6+ Years in Business' and '50+ Projects Delivered'; (4) A brief 'Why Choose Us' section with 3–4 value propositions; (5) A call-to-action section linking to the Contact Us page.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3",
+          "msg-5"
+        ],
+        "quotes": [
+          "6 years in business, 50+ projects delivered",
+          "Please come up with a suitable Tagline and mission statement",
+          "The appearance should be of corporate website with lots of relevant images and infographics"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section displays the tagline and mission statement",
+        "All 6 service categories are shown as cards with icons",
+        "Stats bar shows '6+ Years in Business' and '50+ Projects Delivered'",
+        "CTA button links to contact.html",
+        "Page is fully responsive"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create the About Us Page (about.html) with the following sections: (1) Company introduction with mission statement and founding story (established 2019, headquartered in Pune); (2) Vision & Values section with 3–4 core values represented as icon cards; (3) Milestones / timeline section highlighting key company history points since 2019; (4) A 'Why Brainscribe' differentiation section.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3",
+          "msg-5"
+        ],
+        "quotes": [
+          "The company was established in 2019",
+          "Pune is the headquarter",
+          "Do you have a tagline or mission statement for Brainscribe? - Please come up with a suitable Tagline and mission statement"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Company founding year (2019) and Pune HQ are mentioned",
+        "Mission statement is present and coherent",
+        "Vision & Values section has at least 3 value cards",
+        "Timeline section reflects company history from 2019 onward",
+        "Page is fully responsive"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create the Services Page (services.html) with a dedicated section for each of the following 6 service areas, each containing a heading, descriptive content, and a relevant icon or inline SVG infographic: (1) Custom Application Development in Microsoft Technologies (.NET, SharePoint, SQL Server); (2) Moodle LMS Development, Customization & Integration; (3) IT Staffing Services across all technologies; (4) Offshore Extended Development Teams (XDT); (5) Hosting & Infrastructure Management using Azure and AWS; (6) Instructional Design & Graphics Design Services for eLearning.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "For each service, create relevant sections and the suitable content",
+          "Development, Customization and Integration of Moodle LMS",
+          "Staffing Services across all IT technologies",
+          "Setting up offshore Extended Development Teams (XDT)",
+          "Hosting and Infrastructure Management Services using Azure and AWS",
+          "Instructional Design Services and Graphics Design Services for eLearning"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All 6 service sections are present with unique headings and content",
+        "Each service section has an associated icon or visual element",
+        "Content is professional, relevant, and well-written",
+        "Page is fully responsive"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Create the Contact Us Page (contact.html) with: (1) A HubSpot form placeholder section — a clearly marked div with a comment like '<!-- INSERT HUBSPOT FORM EMBED CODE HERE -->' and a visible placeholder box in the UI indicating where the form will appear; (2) Company contact information showing Pune, India as the headquarter address; (3) A brief introductory paragraph above the form placeholder. Do NOT implement a custom HTML contact form on this page. The page should be styled consistently with the rest of the site.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-5"
+        ],
+        "quotes": [
+          "Create Contact Us page and later on I will insert the Hubspot form there",
+          "Pune is the headquarter"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Page contains a clearly marked HubSpot embed placeholder div",
+        "The placeholder is visually distinct and labeled in the UI",
+        "Pune, India contact details are shown",
+        "No custom HTML form is present",
+        "Page is styled consistently with the rest of the site"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Organize all image assets in a dedicated /images folder. Use relevant, high-quality placeholder images (via placeholder services or inline SVG illustrations) for hero banners, service section visuals, and about page visuals. Each image reference in HTML must use a relative path from the /images folder so that replacing image files is straightforward.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "The images should be stored separately in the folder so that editing becomes easy"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All <img> tags reference paths under /images/",
+        "The /images folder is present in the project structure",
+        "Placeholder images or SVG illustrations are used for all visual sections"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Create a .env file at the project root with configurable environment variable placeholders for: CONTACT_EMAIL (recipient email for form submissions), RECAPTCHA_SITE_KEY, RECAPTCHA_SECRET_KEY, and SMTP_* credentials (host, port, username, password). Add a README.md explaining each variable and how to configure it. Note that the HubSpot form on Contact Us will eventually replace any direct email/form logic, but the .env is provided for future flexibility and completeness.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3",
+          "msg-5"
+        ],
+        "quotes": [
+          "This should be configurable in .env file",
+          "The SMTP credentials and other environment variables related to reCAPTCHA are to be stored in .env file and should be configurable"
+        ]
+      },
+      "acceptanceCriteria": [
+        ".env file exists at project root with all listed variable placeholders",
+        "README.md documents each variable",
+        "No actual credentials are hardcoded in any HTML/JS file"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Package all files (index.html, about.html, services.html, contact.html, /css, /js, /images, .env, README.md) as a downloadable ZIP archive and provide it as the final output.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "The output should be a ZIP package of HTML5, CSS and JS"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A ZIP file is generated containing all project files",
+        "Folder structure is clean and organized",
+        "All HTML pages open correctly when extracted and viewed in a browser"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Apply a consistent blue and white corporate visual theme across all pages. Use a professional sans-serif typography system, a primary blue palette (e.g., navy/corporate blue #003366 or similar), white backgrounds, subtle grey accents, and clean section layouts with generous whitespace. The design should feel like a modern enterprise IT services company website — trustworthy, clean, and content-rich. Avoid dark themes, neon colors, and overly decorative elements.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "Please keep the theme should be blue and white",
+          "The appearance should be of corporate website with lots of relevant images and infographics",
+          "No dark themes or bright colors"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All pages use a consistent blue and white color palette",
+        "Typography is professional and legible",
+        "No dark backgrounds or bright/neon accent colors are used",
+        "Layout is clean, spacious, and corporate in appearance"
+      ]
+    }
+  ],
+  "constraints": [
+    "Blue and white color theme only — no dark themes, no neon or bright colors",
+    "Contact Us page must use a HubSpot embed placeholder, not a custom HTML form",
+    "No PHP or server-side scripting — static HTML5/CSS/JS only",
+    "All images must be stored in and referenced from the /images folder",
+    "All configurable variables must be in the .env file — no hardcoded credentials",
+    "Do not mention the number of clients anywhere on the site"
+  ],
+  "nonGoals": [
+    "PHP-based backend or server-side email sending",
+    "reCAPTCHA implementation (placeholder in .env only)",
+    "Custom HTML contact form (HubSpot will be embedded later)",
+    "Dark mode or alternate color themes",
+    "Client count statistics or testimonials with client numbers",
+    "Database or CMS integration",
+    "React or any JavaScript framework — plain HTML5/CSS/JS only"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Corporate hero banner with abstract technology network lines and a blue gradient background (hero-banner.dim_1600x600.png)",
+      "Abstract illustration representing custom software development with code and gears in blue tones (service-dotnet.dim_600x400.png)",
+      "Abstract illustration representing e-learning and LMS with books, screens, and digital learning motifs in blue tones (service-moodle.dim_600x400.png)",
+      "Abstract illustration representing IT staffing with silhouettes of professionals and network connections in blue tones (service-staffing.dim_600x400.png)",
+      "Abstract illustration representing an offshore development team with global map and collaboration icons in blue tones (service-xdt.dim_600x400.png)",
+      "Abstract illustration representing cloud hosting with server racks, cloud icons, and Azure/AWS style visuals in blue tones (service-hosting.dim_600x400.png)",
+      "Abstract illustration representing instructional design and eLearning graphics with pencil, design tools, and digital canvas in blue tones (service-instructional.dim_600x400.png)",
+      "Corporate team collaboration illustration showing diverse professionals in an office setting, blue and white tones (about-team.dim_800x500.png)"
+    ],
+    "edits": []
+  }
+}

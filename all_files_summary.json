@@ -1,0 +1,20 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as the backend entry point with no implemented methods.",
+  "feature_evidence.json": "Feature evidence report mapping implemented features (header, footer, home, about, services, contact pages) to their source files, components, test IDs, and confidence levels.",
+  "frontend-file-summaries.txt": "JSON dictionary of short descriptions for each frontend source file, summarizing purpose and notable fixes for CSS, config, pages, and components.",
+  "frontend/index.css": "Base Tailwind CSS file defining OKLCH-based CSS custom property tokens for light and dark themes including colors, borders, and sidebar variables.",
+  "frontend/index.html": "Minimal HTML shell for the React app with a root div and module script entry point, titled 'Brainscribe'.",
+  "frontend/src/App.tsx": "TanStack Router setup defining a root layout with Header, Footer, and Outlet, plus four routes: Home, About, Services, and Contact.",
+  "frontend/src/components/Footer.tsx": "Four-column footer component with brand info, quick links, services list, Pune HQ contact details, social icons, and a dynamic copyright year.",
+  "frontend/src/components/Header.tsx": "Sticky responsive header with a Brainscribe logo placeholder, desktop nav with active-state styling, mobile hamburger menu, and a 'Get in Touch' CTA button.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and caches an ICP backend actor via TanStack Query, supporting both anonymous and authenticated (Internet Identity) usage, and invalidates dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Custom hook and context provider for Internet Identity authentication, exposing login/logout functions, identity state, and login status using DFINITY's AuthClient.",
+  "frontend/src/index.css": "Global stylesheet that imports Inter and Poppins fonts, sets up Tailwind CSS layers, and defines CSS custom properties for a corporate blue/white color palette along with reusable component utility classes.",
+  "frontend/src/main.tsx": "React application entry point that wraps the App component with TanStack Query's QueryClientProvider and a custom InternetIdentityProvider before mounting to the DOM.",
+  "frontend/src/pages/About.tsx": "About page component displaying Brainscribe's company values, historical milestones from 2019–2025, and key differentiators using icon cards and a timeline layout.",
+  "frontend/src/pages/Contact.tsx": "Contact page component showing company contact details (address, email, phone, hours), a contact form section, and an FAQ list for common client questions.",
+  "frontend/src/pages/Home.tsx": "Home page component featuring a hero section, a grid of six service cards, company stats, and a 'Why Us' section highlighting Brainscribe's key value propositions.",
+  "frontend/src/pages/Services.tsx": "Services page component that renders detailed sections for each of Brainscribe's offerings (Microsoft dev, Moodle LMS, IT staffing, XDT, cloud, design) with images, descriptions, and feature highlight lists.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration for the frontend, extending the default theme with custom OKLCH-based color tokens (navy, sky, slate, sidebar, chart, etc.), custom fonts, and plugins including typography, container-queries, and animate.",
+  "project_state.json": "Tracks the current build state of the Brainscribe corporate website project, including architectural notes, required images, and a list of already-implemented features across the 4-page static HTML/CSS/JS site."
+}

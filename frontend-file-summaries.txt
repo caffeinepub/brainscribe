@@ -1,0 +1,13 @@
+{
+  "frontend/src/index.css": "Global CSS with OKLCH corporate blue & white color tokens, Google Fonts (Inter + Poppins), and reusable component classes — fixed by removing the invalid `group` utility from `@apply` in `.service-card` and replacing pseudo-element `@apply` rules in `.timeline-item` with plain CSS properties.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with navy/sky corporate blue palette, Inter/Poppins font families, custom box shadows, and fade-in animation keyframes.",
+  "frontend/src/App.tsx": "TanStack Router setup with root layout (Header + Footer + Outlet) and four routes: Home (/), About (/about), Services (/services), Contact (/contact).",
+  "frontend/src/components/Header.tsx": "Sticky responsive header with Brainscribe logo placeholder box, desktop nav with active-state underlines, mobile hamburger menu, and \"Get in Touch\" CTA button.",
+  "frontend/src/components/Footer.tsx": "Four-column footer with brand info, quick links, services list, contact details (Pune HQ), social icons, dynamic copyright year, and caffeine.ai attribution.",
+  "frontend/src/pages/Home.tsx": "Home page with hero section (tagline + mission), stats bar (6+ years, 50+ projects), services overview cards, why-choose-us section with team image, and CTA banner.",
+  "frontend/src/pages/About.tsx": "About Us page with company story, mission & vision cards, 6 core values grid, 7-milestone timeline from 2019–2025, differentiators section, and CTA.",
+  "frontend/src/pages/Services.tsx": "Services page with sticky nav, 6 alternating image+content sections (Microsoft, Moodle, Staffing, XDT, Hosting, Instructional Design), each with highlights checklist and CTA.",
+  "frontend/src/pages/Contact.tsx": "Contact Us page with contact info sidebar, HubSpot form embed placeholder with instructions, FAQ grid, and Pune HQ footer banner.",
+  ".env.example": "Environment variable template with CONTACT_EMAIL, reCAPTCHA keys, SMTP credentials, and HubSpot IDs — all commented and documented.",
+  "README.md": "Project documentation covering pages, tech stack, setup instructions, environment variables guide, HubSpot form insertion steps, and image replacement guide."
+}

@@ -1,0 +1,138 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-shared-html-header-component-included-on-all-4-pages-with-a-placeholder-box-displaying-the-text-brainscribe-in-place-of-a-logo-a-navigation-menu-linking-to-home-about-us-services-and-contact-us-pages-and-a-blue-white-corporate-color-scheme-the-header-must-be-responsive",
+      "featureTitle": "Create a shared HTML header component (included on all 4 pages) with a placeholder box displaying the text 'Brainscribe' in place of a logo, a navigation menu linking to Home, About Us, Services, and Contact Us pages, and a blue & white corporate color scheme. The header must be responsive.",
+      "files": [
+        "frontend/src/components/Header.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-shared-html-footer-component-included-on-all-4-pages-with-company-name-brainscribe-headquarter-location-pune-india-copyright-year-and-quick-navigation-links",
+      "featureTitle": "Create a shared HTML footer component (included on all 4 pages) with company name 'Brainscribe', headquarter location (Pune, India), copyright year, and quick navigation links.",
+      "files": [
+        "frontend/src/components/Footer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-home-page-index-html-with-the-following-sections-1-hero-section-with-the-brainscribe-tagline-engineering-intelligence-empowering-growth-and-a-brief-mission-statement-2-services-overview-section-with-icon-cards-for-each-service-custom-net-sharepoint-sql-development-moodle-lms-staffing-xdt-azure-aws-hosting-instructional-graphics-design-3-stats-bar-displaying-6-years-in-business-and-50-projects-delivered-4-a-brief-why-choose-us-section-with-3-4-value-propositions-5-a-call-to-action-section-linking-to-the-contact-us-page",
+      "featureTitle": "Create the Home Page (index.html) with the following sections: (1) Hero section with the Brainscribe tagline 'Engineering Intelligence. Empowering Growth.' and a brief mission statement; (2) Services overview section with icon cards for each service (Custom .NET/SharePoint/SQL development, Moodle LMS, Staffing, XDT, Azure/AWS Hosting, Instructional & Graphics Design); (3) Stats bar displaying '6+ Years in Business' and '50+ Projects Delivered'; (4) A brief 'Why Choose Us' section with 3–4 value propositions; (5) A call-to-action section linking to the Contact Us page.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/Home.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-about-us-page-about-html-with-the-following-sections-1-company-introduction-with-mission-statement-and-founding-story-established-2019-headquartered-in-pune-2-vision-values-section-with-3-4-core-values-represented-as-icon-cards-3-milestones-timeline-section-highlighting-key-company-history-points-since-2019-4-a-why-brainscribe-differentiation-section",
+      "featureTitle": "Create the About Us Page (about.html) with the following sections: (1) Company introduction with mission statement and founding story (established 2019, headquartered in Pune); (2) Vision & Values section with 3–4 core values represented as icon cards; (3) Milestones / timeline section highlighting key company history points since 2019; (4) A 'Why Brainscribe' differentiation section.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/About.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-services-page-services-html-with-a-dedicated-section-for-each-of-the-following-6-service-areas-each-containing-a-heading-descriptive-content-and-a-relevant-icon-or-inline-svg-infographic-1-custom-application-development-in-microsoft-technologies-net-sharepoint-sql-server-2-moodle-lms-development-customization-integration-3-it-staffing-services-across-all-technologies-4-offshore-extended-development-teams-xdt-5-hosting-infrastructure-management-using-azure-and-aws-6-instructional-design-graphics-design-services-for-elearning",
+      "featureTitle": "Create the Services Page (services.html) with a dedicated section for each of the following 6 service areas, each containing a heading, descriptive content, and a relevant icon or inline SVG infographic: (1) Custom Application Development in Microsoft Technologies (.NET, SharePoint, SQL Server); (2) Moodle LMS Development, Customization & Integration; (3) IT Staffing Services across all technologies; (4) Offshore Extended Development Teams (XDT); (5) Hosting & Infrastructure Management using Azure and AWS; (6) Instructional Design & Graphics Design Services for eLearning.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/Services.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-the-contact-us-page-contact-html-with-1-a-hubspot-form-placeholder-section-a-clearly-marked-div-with-a-comment-like-insert-hubspot-form-embed-code-here-and-a-visible-placeholder-box-in-the-ui-indicating-where-the-form-will-appear-2-company-contact-information-showing-pune-india-as-the-headquarter-address-3-a-brief-introductory-paragraph-above-the-form-placeholder-do-not-implement-a-custom-html-contact-form-on-this-page-the-page-should-be-styled-consistently-with-the-rest-of-the-site",
+      "featureTitle": "Create the Contact Us Page (contact.html) with: (1) A HubSpot form placeholder section — a clearly marked div with a comment like '<!-- INSERT HUBSPOT FORM EMBED CODE HERE -->' and a visible placeholder box in the UI indicating where the form will appear; (2) Company contact information showing Pune, India as the headquarter address; (3) A brief introductory paragraph above the form placeholder. Do NOT implement a custom HTML contact form on this page. The page should be styled consistently with the rest of the site.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/Contact.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-consistent-blue-and-white-corporate-visual-theme-across-all-pages-use-a-professional-sans-serif-typography-system-a-primary-blue-palette-e-g-navy-corporate-blue-003366-or-similar-white-backgrounds-subtle-grey-accents-and-clean-section-layouts-with-generous-whitespace-the-design-should-feel-like-a-modern-enterprise-it-services-company-website-trustworthy-clean-and-content-rich-avoid-dark-themes-neon-colors-and-overly-decorative-elements",
+      "featureTitle": "Apply a consistent blue and white corporate visual theme across all pages. Use a professional sans-serif typography system, a primary blue palette (e.g., navy/corporate blue #003366 or similar), white backgrounds, subtle grey accents, and clean section layouts with generous whitespace. The design should feel like a modern enterprise IT services company website — trustworthy, clean, and content-rich. Avoid dark themes, neon colors, and overly decorative elements.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
