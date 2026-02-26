@@ -120,7 +120,7 @@ export default function Home() {
             </div>
             <div className="hidden lg:block">
               <img
-                src="/assets/generated/hero-banner.dim_1600x600.png"
+                src="/images/hero-banner.dim_1440x600.png"
                 alt="Brainscribe Technology Solutions"
                 className="rounded-xl shadow-2xl w-full object-cover"
               />
@@ -222,7 +222,7 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-full h-full bg-sky-pale rounded-xl"></div>
               <img
-                src="/assets/generated/about-team.dim_800x500.png"
+                src="/images/about-hero.dim_1200x500.png"
                 alt="Brainscribe Team"
                 className="relative z-10 rounded-xl shadow-card w-full object-cover"
               />

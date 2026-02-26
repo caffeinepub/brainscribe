@@ -1,129 +1,52 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-26T09:40:30.505Z",
+  "generatedAt": "2026-02-26T09:58:04.868Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 10,
-    "implemented": 7,
+    "total": 3,
+    "implemented": 1,
     "items": [
       {
-        "id": "REQ-1",
-        "summary": "Create a shared HTML header component (included on all 4 pages) with a placeholder box displaying the text 'Brainscribe' in place of a logo, a navigation menu linking to Home, About Us, Services, and Contact Us pages, and a blue & white corporate color scheme. The header must be responsive.",
+        "id": "REQ-11",
+        "summary": "Create a dedicated /images folder structure under frontend/public/images with placeholder images for: (1) a hero banner image for the Home page (hero-banner.jpg or inline SVG fallback), (2) service section visuals for each of the 6 services, and (3) an About page visual. All image references in the pages must use relative paths pointing to this /images folder so that replacing files is straightforward.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/components/Header.tsx",
-          "frontend/src/index.css"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/Header.tsx",
-          "frontend/src/index.css"
-        ]
-      },
-      {
-        "id": "REQ-10",
-        "summary": "Apply a consistent blue and white corporate visual theme across all pages. Use a professional sans-serif typography system, a primary blue palette (e.g., navy/corporate blue #003366 or similar), white backgrounds, subtle grey accents, and clean section layouts with generous whitespace. The design should feel like a modern enterprise IT services company website — trustworthy, clean, and content-rich. Avoid dark themes, neon colors, and overly decorative elements.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/tailwind.config.js",
-          "frontend/src/index.css",
-          "frontend/src/components/Layout.tsx",
-          "frontend/src/App.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/tailwind.config.js",
-          "frontend/src/index.css",
-          "frontend/src/App.tsx"
-        ]
-      },
-      {
-        "id": "REQ-2",
-        "summary": "Create a shared HTML footer component (included on all 4 pages) with company name 'Brainscribe', headquarter location (Pune, India), copyright year, and quick navigation links.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/Footer.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/Footer.tsx"
-        ]
-      },
-      {
-        "id": "REQ-3",
-        "summary": "Create the Home Page (index.html) with the following sections: (1) Hero section with the Brainscribe tagline 'Engineering Intelligence. Empowering Growth.' and a brief mission statement; (2) Services overview section with icon cards for each service (Custom .NET/SharePoint/SQL development, Moodle LMS, Staffing, XDT, Azure/AWS Hosting, Instructional & Graphics Design); (3) Stats bar displaying '6+ Years in Business' and '50+ Projects Delivered'; (4) A brief 'Why Choose Us' section with 3–4 value propositions; (5) A call-to-action section linking to the Contact Us page.",
-        "status": "implemented",
-        "plannedFiles": [
+          "frontend/public/images/.gitkeep",
+          "frontend/public/images/hero-banner.dim_1440x600.png",
+          "frontend/public/images/service-dotnet.dim_600x400.png",
+          "frontend/public/images/service-moodle.dim_600x400.png",
+          "frontend/public/images/service-staffing.dim_600x400.png",
+          "frontend/public/images/service-xdt.dim_600x400.png",
+          "frontend/public/images/service-cloud.dim_600x400.png",
+          "frontend/public/images/service-design.dim_600x400.png",
+          "frontend/public/images/about-hero.dim_1200x500.png",
           "frontend/src/pages/Home.tsx",
-          "frontend/src/App.tsx"
+          "frontend/src/pages/Services.tsx",
+          "frontend/src/pages/About.tsx"
         ],
         "matchedFiles": [
+          "frontend/public/images/.gitkeep",
           "frontend/src/pages/Home.tsx",
-          "frontend/src/App.tsx"
-        ]
-      },
-      {
-        "id": "REQ-4",
-        "summary": "Create the About Us Page (about.html) with the following sections: (1) Company introduction with mission statement and founding story (established 2019, headquartered in Pune); (2) Vision & Values section with 3–4 core values represented as icon cards; (3) Milestones / timeline section highlighting key company history points since 2019; (4) A 'Why Brainscribe' differentiation section.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/pages/About.tsx",
-          "frontend/src/App.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/pages/About.tsx",
-          "frontend/src/App.tsx"
-        ]
-      },
-      {
-        "id": "REQ-5",
-        "summary": "Create the Services Page (services.html) with a dedicated section for each of the following 6 service areas, each containing a heading, descriptive content, and a relevant icon or inline SVG infographic: (1) Custom Application Development in Microsoft Technologies (.NET, SharePoint, SQL Server); (2) Moodle LMS Development, Customization & Integration; (3) IT Staffing Services across all technologies; (4) Offshore Extended Development Teams (XDT); (5) Hosting & Infrastructure Management using Azure and AWS; (6) Instructional Design & Graphics Design Services for eLearning.",
-        "status": "implemented",
-        "plannedFiles": [
           "frontend/src/pages/Services.tsx",
-          "frontend/src/App.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/pages/Services.tsx",
-          "frontend/src/App.tsx"
+          "frontend/src/pages/About.tsx"
         ]
       },
       {
-        "id": "REQ-6",
-        "summary": "Create the Contact Us Page (contact.html) with: (1) A HubSpot form placeholder section — a clearly marked div with a comment like '<!-- INSERT HUBSPOT FORM EMBED CODE HERE -->' and a visible placeholder box in the UI indicating where the form will appear; (2) Company contact information showing Pune, India as the headquarter address; (3) A brief introductory paragraph above the form placeholder. Do NOT implement a custom HTML contact form on this page. The page should be styled consistently with the rest of the site.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/pages/Contact.tsx",
-          "frontend/src/App.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/pages/Contact.tsx",
-          "frontend/src/App.tsx"
-        ]
-      },
-      {
-        "id": "REQ-7",
-        "summary": "Organize all image assets in a dedicated /images folder. Use relevant, high-quality placeholder images (via placeholder services or inline SVG illustrations) for hero banners, service section visuals, and about page visuals. Each image reference in HTML must use a relative path from the /images folder so that replacing image files is straightforward.",
+        "id": "REQ-12",
+        "summary": "Create a .env file at the project root containing placeholder environment variables: CONTACT_EMAIL, RECAPTCHA_SITE_KEY, RECAPTCHA_SECRET_KEY, SMTP_HOST, SMTP_PORT, SMTP_USERNAME, and SMTP_PASSWORD. Each variable should have a descriptive placeholder value (e.g., CONTACT_EMAIL=your@email.com) so recipients know what to fill in.",
         "status": "missing",
         "plannedFiles": [
-          "frontend/public/assets/generated/README.md"
+          ".env"
         ],
         "matchedFiles": []
       },
       {
-        "id": "REQ-8",
-        "summary": "Create a .env file at the project root with configurable environment variable placeholders for: CONTACT_EMAIL (recipient email for form submissions), RECAPTCHA_SITE_KEY, RECAPTCHA_SECRET_KEY, and SMTP_* credentials (host, port, username, password). Add a README.md explaining each variable and how to configure it. Note that the HubSpot form on Contact Us will eventually replace any direct email/form logic, but the .env is provided for future flexibility and completeness.",
-        "status": "missing",
-        "plannedFiles": [
-          ".env.example",
-          "README.md"
-        ],
-        "matchedFiles": []
-      },
-      {
-        "id": "REQ-9",
-        "summary": "Package all files (index.html, about.html, services.html, contact.html, /css, /js, /images, .env, README.md) as a downloadable ZIP archive and provide it as the final output.",
+        "id": "REQ-13",
+        "summary": "Create a README.md file at the project root that explains: (1) the project structure and page descriptions, (2) each .env variable — its purpose and how to configure it, (3) a note that the HubSpot form on the Contact Us page will eventually replace any direct email/form logic, and (4) instructions for local setup and how to replace placeholder images in the /images folder.",
         "status": "missing",
         "plannedFiles": [
           "README.md"
@@ -133,112 +56,23 @@
     ]
   },
   "changedFiles": [
-    "backend/main.mo",
     "build-request.json",
-    "build-template/Dockerfile",
-    "build-template/LICENSE",
     "build-template/README.md",
-    "build-template/deploy.sh",
-    "build-template/icp.yaml",
-    "build-template/package.json",
-    "build-template/pnpm-lock.yaml",
-    "build-template/pnpm-workspace.yaml",
-    "build-template/scripts/prune-unused-images.js",
-    "build-template/scripts/resize-images.js",
-    "build-template/src/backend/canister.yaml",
-    "build-template/src/backend/system-idl/aaaaa-aa.did",
-    "build-template/src/frontend/canister.yaml",
-    "build-template/src/frontend/components.json",
-    "build-template/src/frontend/env.json",
-    "build-template/src/frontend/eslint-rules/no-bigint-in-query-keys.js",
-    "build-template/src/frontend/eslint-rules/require-internet-identity-provider.js",
-    "build-template/src/frontend/eslint.config.js",
-    "build-template/src/frontend/package.json",
-    "build-template/src/frontend/postcss.config.js",
-    "build-template/src/frontend/src/components/ui/accordion.tsx",
-    "build-template/src/frontend/src/components/ui/alert-dialog.tsx",
-    "build-template/src/frontend/src/components/ui/alert.tsx",
-    "build-template/src/frontend/src/components/ui/aspect-ratio.tsx",
-    "build-template/src/frontend/src/components/ui/avatar.tsx",
-    "build-template/src/frontend/src/components/ui/badge.tsx",
-    "build-template/src/frontend/src/components/ui/breadcrumb.tsx",
-    "build-template/src/frontend/src/components/ui/button.tsx",
-    "build-template/src/frontend/src/components/ui/calendar.tsx",
-    "build-template/src/frontend/src/components/ui/card.tsx",
-    "build-template/src/frontend/src/components/ui/carousel.tsx",
-    "build-template/src/frontend/src/components/ui/chart.tsx",
-    "build-template/src/frontend/src/components/ui/checkbox.tsx",
-    "build-template/src/frontend/src/components/ui/collapsible.tsx",
-    "build-template/src/frontend/src/components/ui/command.tsx",
-    "build-template/src/frontend/src/components/ui/context-menu.tsx",
-    "build-template/src/frontend/src/components/ui/dialog.tsx",
-    "build-template/src/frontend/src/components/ui/drawer.tsx",
-    "build-template/src/frontend/src/components/ui/dropdown-menu.tsx",
-    "build-template/src/frontend/src/components/ui/form.tsx",
-    "build-template/src/frontend/src/components/ui/hover-card.tsx",
-    "build-template/src/frontend/src/components/ui/input-otp.tsx",
-    "build-template/src/frontend/src/components/ui/input.tsx",
-    "build-template/src/frontend/src/components/ui/label.tsx",
-    "build-template/src/frontend/src/components/ui/menubar.tsx",
-    "build-template/src/frontend/src/components/ui/navigation-menu.tsx",
-    "build-template/src/frontend/src/components/ui/pagination.tsx",
-    "build-template/src/frontend/src/components/ui/popover.tsx",
-    "build-template/src/frontend/src/components/ui/progress.tsx",
-    "build-template/src/frontend/src/components/ui/radio-group.tsx",
-    "build-template/src/frontend/src/components/ui/resizable.tsx",
-    "build-template/src/frontend/src/components/ui/scroll-area.tsx",
-    "build-template/src/frontend/src/components/ui/select.tsx",
-    "build-template/src/frontend/src/components/ui/separator.tsx",
-    "build-template/src/frontend/src/components/ui/sheet.tsx",
-    "build-template/src/frontend/src/components/ui/sidebar.tsx",
-    "build-template/src/frontend/src/components/ui/skeleton.tsx",
-    "build-template/src/frontend/src/components/ui/slider.tsx",
-    "build-template/src/frontend/src/components/ui/sonner.tsx",
-    "build-template/src/frontend/src/components/ui/switch.tsx",
-    "build-template/src/frontend/src/components/ui/table.tsx",
-    "build-template/src/frontend/src/components/ui/tabs.tsx",
-    "build-template/src/frontend/src/components/ui/textarea.tsx",
-    "build-template/src/frontend/src/components/ui/toggle-group.tsx",
-    "build-template/src/frontend/src/components/ui/toggle.tsx",
-    "build-template/src/frontend/src/components/ui/tooltip.tsx",
-    "build-template/src/frontend/src/hooks/use-mobile.tsx",
-    "build-template/src/frontend/src/lib/utils.ts",
-    "build-template/src/frontend/tsconfig.json",
-    "build-template/src/frontend/vite.config.js",
-    "build-template/tsconfig.json",
-    "caffeine.lock.json",
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/index.css",
-    "frontend/index.html",
-    "frontend/public/assets/generated/about-team.dim_800x500.png",
-    "frontend/public/assets/generated/hero-banner.dim_1600x600.png",
+    "frontend/public/assets/generated/about-hero.dim_1200x500.png",
+    "frontend/public/assets/generated/hero-banner.dim_1440x600.png",
+    "frontend/public/assets/generated/service-cloud.dim_600x400.png",
+    "frontend/public/assets/generated/service-design.dim_600x400.png",
     "frontend/public/assets/generated/service-dotnet.dim_600x400.png",
-    "frontend/public/assets/generated/service-hosting.dim_600x400.png",
-    "frontend/public/assets/generated/service-instructional.dim_600x400.png",
     "frontend/public/assets/generated/service-moodle.dim_600x400.png",
     "frontend/public/assets/generated/service-staffing.dim_600x400.png",
     "frontend/public/assets/generated/service-xdt.dim_600x400.png",
-    "frontend/src/App.tsx",
-    "frontend/src/backend.d.ts",
-    "frontend/src/backend.ts",
-    "frontend/src/components/Footer.tsx",
-    "frontend/src/components/Header.tsx",
-    "frontend/src/config.ts",
-    "frontend/src/declarations/backend.did.d.ts",
-    "frontend/src/declarations/backend.did.js",
-    "frontend/src/hooks/useActor.ts",
-    "frontend/src/hooks/useInternetIdentity.ts",
-    "frontend/src/index.css",
-    "frontend/src/main.tsx",
+    "frontend/public/images/.gitkeep",
     "frontend/src/pages/About.tsx",
-    "frontend/src/pages/Contact.tsx",
     "frontend/src/pages/Home.tsx",
     "frontend/src/pages/Services.tsx",
-    "frontend/src/ui-summary.json",
-    "frontend/src/utils/StorageClient.ts",
-    "frontend/tailwind.config.js",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

@@ -4,10 +4,12 @@
   "frontend/src/App.tsx": "TanStack Router setup with root layout (Header + Footer + Outlet) and four routes: Home (/), About (/about), Services (/services), Contact (/contact).",
   "frontend/src/components/Header.tsx": "Sticky responsive header with Brainscribe logo placeholder box, desktop nav with active-state underlines, mobile hamburger menu, and \"Get in Touch\" CTA button.",
   "frontend/src/components/Footer.tsx": "Four-column footer with brand info, quick links, services list, contact details (Pune HQ), social icons, dynamic copyright year, and caffeine.ai attribution.",
-  "frontend/src/pages/Home.tsx": "Home page with hero section (tagline + mission), stats bar (6+ years, 50+ projects), services overview cards, why-choose-us section with team image, and CTA banner.",
-  "frontend/src/pages/About.tsx": "About Us page with company story, mission & vision cards, 6 core values grid, 7-milestone timeline from 2019–2025, differentiators section, and CTA.",
-  "frontend/src/pages/Services.tsx": "Services page with sticky nav, 6 alternating image+content sections (Microsoft, Moodle, Staffing, XDT, Hosting, Instructional Design), each with highlights checklist and CTA.",
+  "frontend/src/pages/Home.tsx": "Home page with hero (now referencing `/images/hero-banner.dim_1440x600.png`), stats bar, services overview cards, why-choose-us section (now referencing `/images/about-hero.dim_1200x500.png`), and CTA banner.",
+  "frontend/src/pages/About.tsx": "About Us page with company story, mission & vision, core values, timeline, and differentiators; hero image updated to reference `/images/about-hero.dim_1200x500.png`.",
+  "frontend/src/pages/Services.tsx": "Services page with sticky nav and 6 alternating service sections; all image `src` attributes updated to reference `/images/service-*.png` paths (dotnet, moodle, staffing, xdt, cloud, design).",
   "frontend/src/pages/Contact.tsx": "Contact Us page with contact info sidebar, HubSpot form embed placeholder with instructions, FAQ grid, and Pune HQ footer banner.",
   ".env.example": "Environment variable template with CONTACT_EMAIL, reCAPTCHA keys, SMTP credentials, and HubSpot IDs — all commented and documented.",
-  "README.md": "Project documentation covering pages, tech stack, setup instructions, environment variables guide, HubSpot form insertion steps, and image replacement guide."
+  "README.md": "Comprehensive project documentation covering pages, project structure, tech stack, local setup instructions, environment variables reference table, HubSpot form embed instructions, and an image management guide with filename-to-page mapping.",
+  "frontend/public/images/.gitkeep": "Empty placeholder file that creates and tracks the `frontend/public/images/` directory in git — the canonical location for all site images.",
+  ".env": "Root-level environment variables file with placeholder values for CONTACT_EMAIL, RECAPTCHA_SITE_KEY, RECAPTCHA_SECRET_KEY, SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, and optional HubSpot IDs — each documented with a comment."
 }

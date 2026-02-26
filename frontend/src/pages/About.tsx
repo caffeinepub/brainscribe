@@ -1,7 +1,7 @@
 import { Link } from '@tanstack/react-router';
 import {
   Target, Eye, Heart, Users, Lightbulb, Shield, Globe, ArrowRight,
-  MapPin, Calendar, TrendingUp, Award
+  MapPin, Calendar
 } from 'lucide-react';
 
 const values = [
@@ -107,7 +107,7 @@ export default function About() {
             <div className="relative">
               <div className="absolute -top-4 -right-4 w-full h-full bg-sky-pale rounded-xl"></div>
               <img
-                src="/assets/generated/about-team.dim_800x500.png"
+                src="/images/about-hero.dim_1200x500.png"
                 alt="Brainscribe Team"
                 className="relative z-10 rounded-xl shadow-card w-full object-cover"
               />
@@ -214,7 +214,7 @@ export default function About() {
             <div className="divider-line"></div>
           </div>
           <div className="max-w-3xl mx-auto">
-            {milestones.map((milestone, index) => (
+            {milestones.map((milestone) => (
               <div key={milestone.year} className="timeline-item">
                 <div className="bg-white rounded-lg p-5 shadow-xs border border-slate-200 hover:shadow-card transition-shadow duration-300">
                   <div className="flex items-start gap-4">

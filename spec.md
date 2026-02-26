@@ -1,19 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Build a 4-page static HTML5/CSS/JS corporate website for Brainscribe, an IT services company headquartered in Pune, India, using a blue and white theme.
+**Goal:** Add a handoff package to the Brainscribe project consisting of an organized `/images` folder, a `.env` configuration file, and a `README.md` documentation file.
 
 **Planned changes:**
-- Shared header with a "Brainscribe" logo placeholder, responsive navigation (Home, About Us, Services, Contact Us), blue & white color scheme
-- Shared footer with company name, Pune, India HQ, copyright year, and quick nav links
-- Home page (index.html): hero section with tagline "Engineering Intelligence. Empowering Growth.", services overview cards (6 services), stats bar (6+ Years, 50+ Projects), "Why Choose Us" section, CTA to Contact Us
-- About Us page (about.html): company intro (founded 2019, Pune HQ), mission statement, Vision & Values cards, milestones timeline, "Why Brainscribe" section
-- Services page (services.html): dedicated sections for Custom .NET/SharePoint/SQL development, Moodle LMS, IT Staffing, XDT (offshore teams), Azure/AWS Hosting, and Instructional & Graphics Design — each with heading, content, and icon/SVG
-- Contact Us page (contact.html): intro paragraph, clearly marked HubSpot embed placeholder div, Pune India contact info, no custom HTML form
-- `/images` folder with all image assets referenced via relative paths
-- `.env` file with placeholders for CONTACT_EMAIL, RECAPTCHA_SITE_KEY, RECAPTCHA_SECRET_KEY, and SMTP credentials
-- README.md documenting all environment variables
-- All pages fully responsive, consistent corporate blue (#003366) and white palette, professional sans-serif typography
-- Project packaged as a downloadable ZIP archive
+- Create `frontend/public/images` folder with placeholder images for the hero banner, 6 service sections, and the About page; update all image `src` attributes in pages to use relative paths pointing to this folder
+- Create a `.env` file at the project root with descriptive placeholder values for `CONTACT_EMAIL`, `RECAPTCHA_SITE_KEY`, `RECAPTCHA_SECRET_KEY`, `SMTP_HOST`, `SMTP_PORT`, `SMTP_USERNAME`, and `SMTP_PASSWORD`
+- Create a `README.md` at the project root documenting the project structure, all `.env` variables with their purpose, a note about the HubSpot form placeholder on the Contact Us page, and instructions for local setup and replacing placeholder images
 
-**User-visible outcome:** A complete, downloadable ZIP of a professional 4-page static corporate website for Brainscribe with consistent branding, all pages interlinked, a HubSpot form placeholder on the Contact page, and organized assets ready for deployment or further customization.
+**User-visible outcome:** The project is ready for handoff with all images organized in one folder for easy replacement, a `.env` file clearly showing what credentials need to be configured, and a README that guides recipients through setup.

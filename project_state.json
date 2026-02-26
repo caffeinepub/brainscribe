@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 3,
+  "projectStateVersion": 5,
   "summary": "Building a 4-page static HTML5/CSS/JS corporate website for 'Brainscribe', an India-based IT services company headquartered in Pune, established 2019. Blue and white corporate theme. Pages: Home, About Us, Services, Contact Us. Services include .NET/SharePoint/SQL Server development, Moodle LMS, Staffing, XDT, Azure/AWS hosting, and Instructional/Graphics Design for eLearning. Contact Us page will have a HubSpot form placeholder. Logo placeholder box in header. Images in /images folder. .env file for configurable settings. Delivered as a ZIP package.",
   "architectural_notes": [
     "Static HTML5/CSS/JS site — no backend/database; Contact Us uses HubSpot form embed placeholder",
@@ -10,7 +10,7 @@
   ],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- Corporate hero banner with abstract technology network lines and a blue gradient background (hero-banner.dim_1600x600.png)\n- Abstract illustration representing custom software development with code and gears in blue tones (service-dotnet.dim_600x400.png)\n- Abstract illustration representing e-learning and LMS with books, screens, and digital learning motifs in blue tones (service-moodle.dim_600x400.png)\n- Abstract illustration representing IT staffing with silhouettes of professionals and network connections in blue tones (service-staffing.dim_600x400.png)\n- Abstract illustration representing an offshore development team with global map and collaboration icons in blue tones (service-xdt.dim_600x400.png)\n- Abstract illustration representing cloud hosting with server racks, cloud icons, and Azure/AWS style visuals in blue tones (service-hosting.dim_600x400.png)\n- Abstract illustration representing instructional design and eLearning graphics with pencil, design tools, and digital canvas in blue tones (service-instructional.dim_600x400.png)\n- Corporate team collaboration illustration showing diverse professionals in an office setting, blue and white tones (about-team.dim_800x500.png)",
+  "imageRequirements": "## Required Images\n- Corporate hero banner with abstract blue geometric shapes and subtle grid lines, wide format (hero-banner.dim_1440x600.png)\n- Abstract illustration representing Microsoft .NET and SharePoint development with code and blue tones (service-dotnet.dim_600x400.png)\n- Abstract illustration representing Moodle LMS e-learning platform with book and graduation icons in blue (service-moodle.dim_600x400.png)\n- Abstract illustration representing IT staffing and team management with people silhouettes in corporate blue (service-staffing.dim_600x400.png)\n- Abstract illustration representing offshore extended development teams with global connectivity lines (service-xdt.dim_600x400.png)\n- Abstract illustration representing cloud hosting on Azure and AWS with cloud and server icons in blue (service-cloud.dim_600x400.png)\n- Abstract illustration representing instructional and graphic design for eLearning with design tool icons (service-design.dim_600x400.png)\n- Corporate office or team illustration in blue and white tones for the About page (about-hero.dim_1200x500.png)",
   "existing_features": [
     {
       "id": "feature-create-a-shared-html-header-component-included-on-all-4-pages-with-a-placeholder-box-displaying-the-text-brainscribe-in-place-of-a-logo-a-navigation-menu-linking-to-home-about-us-services-and-contact-us-pages-and-a-blue-white-corporate-color-scheme-the-header-must-be-responsive",
@@ -67,6 +67,14 @@
         "REQ-10"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-create-a-dedicated-images-folder-structure-under-frontend-public-images-with-placeholder-images-for-1-a-hero-banner-image-for-the-home-page-hero-banner-jpg-or-inline-svg-fallback-2-service-section-visuals-for-each-of-the-6-services-and-3-an-about-page-visual-all-image-references-in-the-pages-must-use-relative-paths-pointing-to-this-images-folder-so-that-replacing-files-is-straightforward",
+      "title": "Create a dedicated /images folder structure under frontend/public/images with placeholder images for: (1) a hero banner image for the Home page (hero-banner.jpg or inline SVG fallback), (2) service section visuals for each of the 6 services, and (3) an About page visual. All image references in the pages must use relative paths pointing to this /images folder so that replacing files is straightforward.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -121,6 +129,22 @@
       "summary": "Package all files (index.html, about.html, services.html, contact.html, /css, /js, /images, .env, README.md) as a downloadable ZIP archive and provide it as the final output.",
       "reqIds": [
         "REQ-9"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Create a .env file at the project root containing placeholder environment variables: CONTACT_EMAIL, RECAPTCHA_SITE_KEY, RECAPTCHA_SECRET_KEY, SMTP_HOST, SMTP_PORT, SMTP_USERNAME, and SMTP_PASSWORD. Each variable should have a descriptive placeholder value (e.g., CONTACT_EMAIL=your@email.com) so recipients know what to fill in.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "Create a README.md file at the project root that explains: (1) the project structure and page descriptions, (2) each .env variable — its purpose and how to configure it, (3) a note that the HubSpot form on the Contact Us page will eventually replace any direct email/form logic, and (4) instructions for local setup and how to replace placeholder images in the /images folder.",
+      "reqIds": [
+        "REQ-13"
       ],
       "status": "pending"
     }

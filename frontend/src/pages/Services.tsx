@@ -7,7 +7,7 @@ const services = [
     badge: '01',
     title: 'Custom Application Development',
     subtitle: 'Microsoft Technologies — .NET, SharePoint & SQL Server',
-    image: '/assets/generated/service-dotnet.dim_600x400.png',
+    image: '/images/service-dotnet.dim_600x400.png',
     imageAlt: 'Microsoft .NET and SharePoint Development',
     description:
       'Brainscribe delivers robust, scalable custom applications built on the Microsoft technology stack. Whether you need a line-of-business application, a collaborative intranet portal, or a high-performance database solution, our certified engineers bring deep expertise and a proven delivery methodology.',
@@ -26,7 +26,7 @@ const services = [
     badge: '02',
     title: 'Moodle LMS Solutions',
     subtitle: 'Development, Customization & Integration',
-    image: '/assets/generated/service-moodle.dim_600x400.png',
+    image: '/images/service-moodle.dim_600x400.png',
     imageAlt: 'Moodle LMS Development and Customization',
     description:
       'As a specialized Moodle partner, Brainscribe helps organizations harness the full power of the world\'s most popular open-source learning management system. From fresh installations to complex customizations and third-party integrations, we deliver eLearning platforms that engage learners and simplify administration.',
@@ -45,7 +45,7 @@ const services = [
     badge: '03',
     title: 'IT Staffing Services',
     subtitle: 'Skilled Professionals Across All Technologies',
-    image: '/assets/generated/service-staffing.dim_600x400.png',
+    image: '/images/service-staffing.dim_600x400.png',
     imageAlt: 'IT Staffing and Talent Solutions',
     description:
       'Finding the right technology talent at the right time is critical to project success. Brainscribe\'s IT staffing practice connects you with pre-vetted, skilled professionals across a wide range of technologies — quickly and reliably. Whether you need contract, contract-to-hire, or permanent placements, we have the talent network to deliver.',
@@ -64,7 +64,7 @@ const services = [
     badge: '04',
     title: 'Extended Development Teams (XDT)',
     subtitle: 'Dedicated Offshore Teams That Work Like Your Own',
-    image: '/assets/generated/service-xdt.dim_600x400.png',
+    image: '/images/service-xdt.dim_600x400.png',
     imageAlt: 'Offshore Extended Development Teams',
     description:
       'Brainscribe\'s Extended Development Team (XDT) model gives you the benefits of a dedicated, full-time development team in India — without the overhead of setting up your own offshore office. Your XDT team is fully integrated with your processes, tools, and culture, operating as a seamless extension of your in-house team.',
@@ -83,7 +83,7 @@ const services = [
     badge: '05',
     title: 'Hosting & Infrastructure Management',
     subtitle: 'Azure & AWS Cloud Services',
-    image: '/assets/generated/service-hosting.dim_600x400.png',
+    image: '/images/service-cloud.dim_600x400.png',
     imageAlt: 'Azure and AWS Cloud Hosting',
     description:
       'Brainscribe provides comprehensive cloud hosting and infrastructure management services on Microsoft Azure and Amazon Web Services. From initial architecture design to ongoing monitoring and optimization, we ensure your applications run with maximum performance, security, and availability.',
@@ -102,7 +102,7 @@ const services = [
     badge: '06',
     title: 'Instructional & Graphic Design',
     subtitle: 'eLearning Content & Visual Design Services',
-    image: '/assets/generated/service-instructional.dim_600x400.png',
+    image: '/images/service-design.dim_600x400.png',
     imageAlt: 'Instructional Design and eLearning Graphics',
     description:
       'Great eLearning is more than just content — it\'s about designing experiences that engage, inform, and inspire learners. Brainscribe\'s Instructional Design and Graphics Design team creates compelling, pedagogically sound eLearning content and visuals that drive measurable learning outcomes.',

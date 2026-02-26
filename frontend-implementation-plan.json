@@ -1,219 +1,110 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Brainscribe Corporate Website – 4-Page Static HTML5/CSS/JS",
+  "title": "Add handoff package: /images folder, .env file, and README.md",
   "requirements": [
     {
-      "id": "REQ-1",
-      "summary": "Create a shared HTML header component with Brainscribe logo placeholder, navigation menu, blue & white color scheme, and responsive design",
+      "id": "REQ-11",
+      "summary": "Create /images folder structure with placeholder images and update all page image references to use relative paths",
       "acceptanceCriteria": [
-        "Header appears consistently on all 4 pages",
-        "Logo area is a styled placeholder box with the text 'Brainscribe'",
-        "Navigation links correctly route to all four pages",
-        "Header is responsive on mobile and desktop"
+        "A /images (or frontend/public/images) folder exists with placeholder images for the hero banner, each of the 6 service sections, and the About page",
+        "All image src attributes in the pages use relative paths pointing to the /images folder",
+        "Replacing an image file in /images updates it on the corresponding page without any code changes"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Header.tsx",
+          "path": "frontend/public/images/.gitkeep",
           "operation": "create",
-          "description": "Create a reusable Header component with a styled placeholder box displaying 'Brainscribe' text, navigation menu linking to Home, About Us, Services, and Contact Us pages, using blue (#003366 or similar) and white corporate colors, with responsive mobile menu toggle"
+          "description": "Create the frontend/public/images directory structure to hold all site images. This ensures the folder is tracked in git and establishes the standard location for image assets."
         },
         {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Add global CSS variables for the blue and white corporate color scheme (primary blue #003366, white backgrounds, subtle grey accents), and base typography styles using professional sans-serif fonts"
-        }
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "summary": "Create a shared HTML footer component with company name, Pune India location, copyright year, and quick navigation links",
-      "acceptanceCriteria": [
-        "Footer appears on all 4 pages",
-        "Pune, India address is displayed",
-        "Copyright text and quick links are present"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Footer.tsx",
+          "path": "frontend/public/images/hero-banner.dim_1440x600.png",
           "operation": "create",
-          "description": "Create a reusable Footer component displaying 'Brainscribe', Pune India headquarter location, dynamic copyright year, and quick navigation links to all pages, styled consistently with the blue and white theme"
-        }
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "summary": "Create the Home Page with hero section, services overview, stats bar, why choose us section, and call-to-action linking to Contact Us",
-      "acceptanceCriteria": [
-        "Hero section displays the tagline and mission statement",
-        "All 6 service categories are shown as cards with icons",
-        "Stats bar shows '6+ Years in Business' and '50+ Projects Delivered'",
-        "CTA button links to contact.html",
-        "Page is fully responsive"
-      ],
-      "file_operations": [
+          "description": "Copy the generated hero banner image from frontend/public/assets/generated/hero-banner.dim_1600x600.png to frontend/public/images/hero-banner.dim_1440x600.png. This establishes the /images folder as the canonical location for site imagery."
+        },
+        {
+          "path": "frontend/public/images/service-dotnet.dim_600x400.png",
+          "operation": "create",
+          "description": "Copy the generated .NET service image from frontend/public/assets/generated/service-dotnet.dim_600x400.png to frontend/public/images/service-dotnet.dim_600x400.png."
+        },
+        {
+          "path": "frontend/public/images/service-moodle.dim_600x400.png",
+          "operation": "create",
+          "description": "Copy the generated Moodle service image from frontend/public/assets/generated/service-moodle.dim_600x400.png to frontend/public/images/service-moodle.dim_600x400.png."
+        },
+        {
+          "path": "frontend/public/images/service-staffing.dim_600x400.png",
+          "operation": "create",
+          "description": "Copy the generated staffing service image from frontend/public/assets/generated/service-staffing.dim_600x400.png to frontend/public/images/service-staffing.dim_600x400.png."
+        },
+        {
+          "path": "frontend/public/images/service-xdt.dim_600x400.png",
+          "operation": "create",
+          "description": "Copy the generated XDT service image from frontend/public/assets/generated/service-xdt.dim_600x400.png to frontend/public/images/service-xdt.dim_600x400.png."
+        },
+        {
+          "path": "frontend/public/images/service-cloud.dim_600x400.png",
+          "operation": "create",
+          "description": "Copy the generated cloud hosting service image from frontend/public/assets/generated/service-hosting.dim_600x400.png to frontend/public/images/service-cloud.dim_600x400.png."
+        },
+        {
+          "path": "frontend/public/images/service-design.dim_600x400.png",
+          "operation": "create",
+          "description": "Copy the generated instructional design service image from frontend/public/assets/generated/service-instructional.dim_600x400.png to frontend/public/images/service-design.dim_600x400.png."
+        },
+        {
+          "path": "frontend/public/images/about-hero.dim_1200x500.png",
+          "operation": "create",
+          "description": "Copy the generated About page hero image from frontend/public/assets/generated/about-team.dim_800x500.png to frontend/public/images/about-hero.dim_1200x500.png."
+        },
         {
           "path": "frontend/src/pages/Home.tsx",
-          "operation": "create",
-          "description": "Create the Home page component with: (1) Hero section displaying the generated hero banner image frontend/public/assets/generated/hero-banner.dim_1600x600.png, tagline 'Engineering Intelligence. Empowering Growth.', and mission statement; (2) Services overview section with icon cards for Custom .NET/SharePoint/SQL development, Moodle LMS, Staffing, XDT, Azure/AWS Hosting, and Instructional & Graphics Design using the six generated service images (frontend/public/assets/generated/service-dotnet.dim_600x400.png, frontend/public/assets/generated/service-moodle.dim_600x400.png, frontend/public/assets/generated/service-staffing.dim_600x400.png, frontend/public/assets/generated/service-xdt.dim_600x400.png, frontend/public/assets/generated/service-hosting.dim_600x400.png, frontend/public/assets/generated/service-instructional.dim_600x400.png); (3) Stats bar displaying '6+ Years in Business' and '50+ Projects Delivered'; (4) Why Choose Us section with 3-4 value propositions; (5) CTA section with button linking to Contact Us page. All sections must be fully responsive and use the blue and white color scheme"
-        },
-        {
-          "path": "frontend/src/App.tsx",
           "operation": "modify",
-          "description": "Wire the Home page component into the React Router as the root route ('/'), ensuring the Header and Footer components wrap all page content"
-        }
-      ]
-    },
-    {
-      "id": "REQ-4",
-      "summary": "Create the About Us Page with company introduction, vision & values, milestones timeline, and differentiation section",
-      "acceptanceCriteria": [
-        "Company founding year (2019) and Pune HQ are mentioned",
-        "Mission statement is present and coherent",
-        "Vision & Values section has at least 3 value cards",
-        "Timeline section reflects company history from 2019 onward",
-        "Page is fully responsive"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/About.tsx",
-          "operation": "create",
-          "description": "Create the About Us page component with: (1) Company introduction mentioning establishment in 2019, Pune India headquarter, and mission statement; (2) Vision & Values section with 3-4 core values displayed as icon cards; (3) Milestones timeline section highlighting key company history from 2019 onward; (4) Why Brainscribe differentiation section; (5) Use the generated team collaboration image frontend/public/assets/generated/about-team.dim_800x500.png. All sections must be fully responsive and use the blue and white color scheme"
+          "description": "Update all image src attributes in the Home page to reference /images/hero-banner.dim_1440x600.png for the hero section and the corresponding service images (/images/service-dotnet.dim_600x400.png, etc.) in the service cards grid. Use relative paths that work from the public directory."
         },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Wire the About Us page component into the React Router at route '/about', ensuring proper navigation and layout consistency"
-        }
-      ]
-    },
-    {
-      "id": "REQ-5",
-      "summary": "Create the Services Page with dedicated sections for all 6 service areas, each with heading, descriptive content, and relevant visual",
-      "acceptanceCriteria": [
-        "All 6 service sections are present with unique headings and content",
-        "Each service section has an associated icon or visual element",
-        "Content is professional, relevant, and well-written",
-        "Page is fully responsive"
-      ],
-      "file_operations": [
         {
           "path": "frontend/src/pages/Services.tsx",
-          "operation": "create",
-          "description": "Create the Services page component with dedicated sections for: (1) Custom Application Development in Microsoft Technologies (.NET, SharePoint, SQL Server) using frontend/public/assets/generated/service-dotnet.dim_600x400.png; (2) Moodle LMS Development, Customization & Integration using frontend/public/assets/generated/service-moodle.dim_600x400.png; (3) IT Staffing Services across all technologies using frontend/public/assets/generated/service-staffing.dim_600x400.png; (4) Offshore Extended Development Teams (XDT) using frontend/public/assets/generated/service-xdt.dim_600x400.png; (5) Hosting & Infrastructure Management using Azure and AWS with frontend/public/assets/generated/service-hosting.dim_600x400.png; (6) Instructional Design & Graphics Design Services for eLearning using frontend/public/assets/generated/service-instructional.dim_600x400.png. Each section must have a heading, professional descriptive content, and the relevant generated image. Use the blue and white color scheme and ensure full responsiveness"
+          "operation": "modify",
+          "description": "Update all image src attributes in the Services page to reference the service images from the /images folder (/images/service-dotnet.dim_600x400.png, /images/service-moodle.dim_600x400.png, /images/service-staffing.dim_600x400.png, /images/service-xdt.dim_600x400.png, /images/service-cloud.dim_600x400.png, /images/service-design.dim_600x400.png). Ensure each service section uses the correct relative path."
         },
         {
-          "path": "frontend/src/App.tsx",
+          "path": "frontend/src/pages/About.tsx",
           "operation": "modify",
-          "description": "Wire the Services page component into the React Router at route '/services', ensuring proper navigation and layout consistency"
+          "description": "Update the About page to reference /images/about-hero.dim_1200x500.png for the About page hero visual. Use a relative path that works from the public directory."
         }
       ]
     },
     {
-      "id": "REQ-6",
-      "summary": "Create the Contact Us Page with HubSpot form placeholder, company contact information, and introductory paragraph",
+      "id": "REQ-12",
+      "summary": "Create .env file with placeholder environment variables for email, reCAPTCHA, and SMTP configuration",
       "acceptanceCriteria": [
-        "Page contains a clearly marked HubSpot embed placeholder div",
-        "The placeholder is visually distinct and labeled in the UI",
-        "Pune, India contact details are shown",
-        "No custom HTML form is present",
-        "Page is styled consistently with the rest of the site"
+        ".env file exists at the project root",
+        "File contains CONTACT_EMAIL, RECAPTCHA_SITE_KEY, RECAPTCHA_SECRET_KEY, SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD",
+        "Each variable has a descriptive placeholder value making its purpose clear"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/pages/Contact.tsx",
+          "path": ".env",
           "operation": "create",
-          "description": "Create the Contact Us page component with: (1) A brief introductory paragraph; (2) A clearly marked HubSpot form placeholder div with a comment '<!-- INSERT HUBSPOT FORM EMBED CODE HERE -->' and a visible styled placeholder box indicating where the HubSpot form will be embedded; (3) Company contact information section displaying Pune, India as the headquarter address. Do NOT implement a custom HTML contact form. Use the blue and white color scheme and ensure full responsiveness"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Wire the Contact Us page component into the React Router at route '/contact', ensuring proper navigation and layout consistency"
+          "description": "Create a .env file at the project root containing placeholder environment variables: CONTACT_EMAIL=your@email.com, RECAPTCHA_SITE_KEY=your-recaptcha-site-key, RECAPTCHA_SECRET_KEY=your-recaptcha-secret-key, SMTP_HOST=smtp.example.com, SMTP_PORT=587, SMTP_USERNAME=your-smtp-username, SMTP_PASSWORD=your-smtp-password. Each variable should have a descriptive placeholder that clearly indicates what value should be provided."
         }
       ]
     },
     {
-      "id": "REQ-7",
-      "summary": "Organize all image assets in frontend/public/assets/generated folder and ensure all generated images are properly referenced",
+      "id": "REQ-13",
+      "summary": "Create comprehensive README.md documenting project structure, environment variables, image replacement, and setup instructions",
       "acceptanceCriteria": [
-        "All <img> tags reference paths under /images/",
-        "The /images folder is present in the project structure",
-        "Placeholder images or SVG illustrations are used for all visual sections"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/public/assets/generated/README.md",
-          "operation": "create",
-          "description": "Create a README documenting the generated image files in this folder: hero-banner.dim_1600x600.png, service-dotnet.dim_600x400.png, service-moodle.dim_600x400.png, service-staffing.dim_600x400.png, service-xdt.dim_600x400.png, service-hosting.dim_600x400.png, service-instructional.dim_600x400.png, and about-team.dim_800x500.png. Explain that these are AI-generated placeholder images and can be replaced by updating the files in this directory"
-        }
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "summary": "Create .env file with configurable environment variable placeholders and README documentation",
-      "acceptanceCriteria": [
-        ".env file exists at project root with all listed variable placeholders",
-        "README.md documents each variable",
-        "No actual credentials are hardcoded in any HTML/JS file"
-      ],
-      "file_operations": [
-        {
-          "path": ".env.example",
-          "operation": "create",
-          "description": "Create an .env.example file at the project root with configurable environment variable placeholders: CONTACT_EMAIL (recipient email for form submissions), RECAPTCHA_SITE_KEY, RECAPTCHA_SECRET_KEY, and SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD. Include comments explaining each variable's purpose. Note that the HubSpot form on Contact Us will eventually replace any direct email/form logic"
-        },
-        {
-          "path": "README.md",
-          "operation": "modify",
-          "description": "Add a section documenting the environment variables in .env.example: CONTACT_EMAIL, RECAPTCHA_SITE_KEY, RECAPTCHA_SECRET_KEY, and SMTP_* credentials. Explain that these are for future flexibility and that the Contact Us page currently uses a HubSpot form placeholder. Include instructions on how to copy .env.example to .env and configure the variables"
-        }
-      ]
-    },
-    {
-      "id": "REQ-9",
-      "summary": "Package all files as a downloadable ZIP archive for final output",
-      "acceptanceCriteria": [
-        "A ZIP file is generated containing all project files",
-        "Folder structure is clean and organized",
-        "All HTML pages open correctly when extracted and viewed in a browser"
+        "README.md exists at the project root",
+        "README documents every .env variable with its purpose and an example value",
+        "README includes a project structure overview listing all pages and key folders",
+        "README contains a note about the HubSpot form placeholder and future replacement of email logic",
+        "README provides basic setup instructions including how to replace placeholder images"
       ],
       "file_operations": [
         {
           "path": "README.md",
-          "operation": "modify",
-          "description": "Add deployment and packaging instructions explaining how to build the production bundle and create a ZIP archive containing all project files (HTML pages, CSS, JS, images, .env.example, README.md). Include instructions for running the development server and building for production"
-        }
-      ]
-    },
-    {
-      "id": "REQ-10",
-      "summary": "Apply consistent blue and white corporate visual theme across all pages with professional typography and clean layouts",
-      "acceptanceCriteria": [
-        "All pages use a consistent blue and white color palette",
-        "Typography is professional and legible",
-        "No dark backgrounds or bright/neon accent colors are used",
-        "Layout is clean, spacious, and corporate in appearance"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/tailwind.config.js",
-          "operation": "modify",
-          "description": "Configure Tailwind to extend the theme with a blue and white corporate color palette (primary blue #003366 or similar navy/corporate blue, white backgrounds, subtle grey accents for text and borders). Define professional sans-serif font families. Ensure no dark theme colors or bright/neon accent colors are included"
-        },
-        {
-          "path": "frontend/src/index.css",
-          "operation": "modify",
-          "description": "Add global CSS rules for consistent spacing, clean section layouts with generous whitespace, and base typography using professional sans-serif fonts. Apply the blue and white color scheme globally. Ensure the design feels modern, trustworthy, clean, and enterprise-appropriate"
-        },
-        {
-          "path": "frontend/src/components/Layout.tsx",
           "operation": "create",
-          "description": "Create a Layout component that wraps the Header and Footer components around page content, ensuring consistent application of the blue and white corporate theme, proper spacing, and responsive behavior across all pages"
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Wrap all routes with the Layout component to ensure consistent header, footer, and theme application across all pages (Home, About, Services, Contact)"
+          "description": "Create a comprehensive README.md at the project root that includes: (1) Project overview and description of Brainscribe; (2) Project structure section listing all pages (Home, About, Services, Contact) and key directories (frontend/src/pages, frontend/src/components, frontend/public/images); (3) Environment variables section documenting each .env variable (CONTACT_EMAIL, RECAPTCHA_SITE_KEY, RECAPTCHA_SECRET_KEY, SMTP_HOST, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD) with its purpose and example values; (4) A note explaining that the Contact Us page currently uses a HubSpot form placeholder and will eventually replace any direct email/form logic, but the .env is provided for future flexibility; (5) Local setup instructions including npm install, npm run dev, and deployment steps; (6) Image management section with clear instructions for replacing placeholder images in the frontend/public/images folder, emphasizing that file replacement requires no code changes."
         }
       ]
     }
